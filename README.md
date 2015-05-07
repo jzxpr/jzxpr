@@ -1,5 +1,5 @@
 # jzxpr
-Password Management for Teams or Individuals
+Password Management for Teams & Individuals
 
 # License 
 GNU Affero General Public License v3
