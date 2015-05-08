@@ -1,14 +1,13 @@
 #!/usr/bin/php
 <?php
 /**
- * Priceless PHP Base
+ * CloneUI.com - Base Framework
  * Generate Models, Doctrine 1.x
  *
  * @author      BizLogic <hire@bizlogicdev.com>
- * @copyright	2014 - 2015 BizLogic
+ * @copyright	2014 CloneUI
  * @link        http://bizlogicdev.com
- * @link        http://pricelessphp.com
- * @license     GNU Affero General Public License v3
+ * @license     Commercial
  *
  * @since  	    Thursday, July 17, 2014, 18:13 GMT+1
  * @modified    $Date: 2013-10-12 00:13:50 -0700 (Sat, 12 Oct 2013) $ $Author: marquis@marquisknox.com $

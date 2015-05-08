@@ -1,12 +1,12 @@
 <?php
 /**
- * Priceless PHP Base
+ * jzxpr
  * Index Controller
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @copyright   2012 - 2015 BizLogic
  * @link        http://bizlogicdev.com
- * @link        http://pricelessphp.com
+ * @link        http://jzxpr.com
  * @license     GNU Affero General Public License v3
  *
  * @since  	    Tuesday, November 27, 2012, 04:18 PM GMT+1
@@ -14,11 +14,18 @@
  * @version     $Id: IndexController.php 109 2014-10-13 09:46:37Z hire@bizlogicdev.com $
  *
  * @category    Controllers
- * @package     Priceless PHP Base
+ * @package     jzxpr
 */
 
 class IndexController extends Zend_Controller_Action
 {	
     public function init() {}
-    public function indexAction() {}
+    
+    public function indexAction() 
+    {
+        $Passwords      = new Passwords();
+        $passwordList   = $Passwords->get( 50 );
+        
+        $this->view->passwords = $passwordList;
+    }
 }

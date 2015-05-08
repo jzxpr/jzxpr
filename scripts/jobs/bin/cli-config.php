@@ -1,18 +1,17 @@
 #!/usr/bin/php
 <?php
 /**
- * Priceless PHP Base
+ * CloneUI.com - Base Framework
  * CLI Config for Doctrine 2.x
  *
- * @author      BizLogic <hire@bizlogicdev.com>
- * @copyright	2014 - 2015 BizLogic
- * @link        http://bizlogicdev.com
- * @link        http://pricelessphp.com
- * @license     GNU Affero General Public License v3
+ * @author      CloneUI <code@cloneui.com>
+ * @copyright	2014 CloneUI
+ * @link        http://cloneui.com
+ * @license     Commercial
  *
  * @since  	    Thursday, July 24, 2014, 16:41 GMT+1
- * @modified    $Date$ $Author$
- * @version     $Id$
+ * @modified    $Date: 2013-10-12 00:13:50 -0700 (Sat, 12 Oct 2013) $ $Author: marquis@marquisknox.com $
+ * @version     $Id: UploadController.php 61 2013-10-12 07:13:50Z marquis@marquisknox.com $
  *
  * @category    Scripts; Bash
  * @package     Base Framework

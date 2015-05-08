@@ -1,31 +1,30 @@
 #!/usr/bin/php
 <?php 
 /**
- * Priceless PHP Base
+ * BizLogic -- Base Framework
  * Insert Themes into the DB
  *
- * @author      BizLogic <hire@bizlogicdev.com>
- * @copyright	2014 - 2015 BizLogic
+ * @author      BizLogic <code@bizlogicdev.com>
+ * @copyright	2014 BizLogic
  * @link        http://bizlogicdev.com
- * @link        http://pricelessphp.com
- * @license     GNU Affero General Public License v3
+ * @license     Commercial
  *
  * @since  	    Wednesday, September 24, 2014, 10:39 AM GMT+1
  * @modified    $Date$ $Author$
  * @version     $Id$
  *
  * @category    Scripts; Bash
- * @package     Priceless PHP Base
+ * @package     Base Framework
 */
 
 error_reporting( E_ALL );
 ini_set( 'display_errors', true );
 
 $dbHost     = 'localhost';
-$dbUsername = '';
-$dbName     = '';
-$dbPassword = '';
-$dbPrefix   = '';
+$dbUsername = 'cloneui_ofdemo';
+$dbName     = 'cloneui_ofdemo';
+$dbPassword = 'CTo&09!a~S3U';
+$dbPrefix   = 'cloneui_';
 
 // BASEDIR
 define( 'BASEDIR', dirname( dirname( dirname( __FILE__ ) ) ) );
@@ -39,7 +38,7 @@ if ( !$link ) {
 }
 
 // select the database
-$dbSelected = mysql_select_db( $dbName, $link );
+$dbSelected = mysql_select_db( 'cloneui_ofdemo', $link );
 if ( !$dbSelected ) {
 	exit( mysql_error() );
 }

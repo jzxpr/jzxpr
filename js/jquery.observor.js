@@ -1,11 +1,11 @@
 /**
- * Priceless PHP Base
+ * jzxpr
  * jQuery Observor
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @copyright   2012 - 2015 BizLogic
  * @link        http://bizlogicdev.com
- * @link		http://pricelessphp.com
+ * @link		http://jzxpr.com
  * @license     GNU Affero General Public License v3
  *
  * @since  	    Wednesday, July 10, 2013, 20:18 GMT+1
@@ -13,7 +13,7 @@
  * @version     $Id$
  *
  * @category    JavaScript
- * @package     Priceless PHP Base
+ * @package     jzxpr
 */
 
 $(document).ready(function() {	
@@ -27,11 +27,11 @@ $(document).ready(function() {
 	
 	// the 'About' box...
 	$('#linkAbout').click(function(event) {
-		var text	= '<strong>BizLogic</strong> is a software development firm.';
-		text		= text + '<br>This is our base framework.';
-		text		= text + '<br><br>&copy 2013 - ' + new Date().getFullYear();
+		var text	= '<strong>jzxpr</strong>';
+		text		= text + '<br>Password Management for Teams & Individuals';
+		text		= text + '<br><br>&copy 2014 - ' + new Date().getFullYear();
 		text		= text + ' BizLogic';
-		text		= text + '<br><a href="http://bizlogicdev.com" target="_blank">http://bizlogicdev.com</a>';
+		text		= text + '<br><a href="http://jzxpr.com" target="_blank">http://jzxpr.com</a>';
 		
 		bootbox.alert(text, function() {
 			// ...
