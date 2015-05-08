@@ -12,7 +12,7 @@
  * @version     $Revision: 1 $
  *
  * @category    Classes
- * @package     Priceless PHP Base
+ * @package     jzxpr
  * @subpackage  Singleton
  */
 

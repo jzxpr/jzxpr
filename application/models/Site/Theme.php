@@ -1,12 +1,12 @@
 <?php
 /**
- * Priceless PHP Base
+ * jzxpr
  * Site Theme Model
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @copyright   2012 - 2015 BizLogic
  * @link        http://bizlogicdev.com
- * @link        http://pricelessphp.com
+ * @link        http://jzxpr.com
  * @license     GNU Affero General Public License v3
  *
  * @since       Tuesday, September 24, 2013, 10:55 AM GMT+1 mknox

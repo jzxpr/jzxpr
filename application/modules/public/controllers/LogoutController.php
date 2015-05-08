@@ -1,12 +1,12 @@
 <?php
 /**
- * Priceless PHP Base
+ * jzxpr
  * Logout Controller
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @copyright   2013 - 2015 BizLogic
  * @link        http://bizlogicdev.com
- * @link        http://pricelessphp.com
+ * @link        http://jzxpr.com
  * @license     GNU Affero General Public License v3
  *
  * @since  	    Friday, November 29, 2013, 05:33 PM GMT+1
@@ -14,7 +14,7 @@
  * @version     $Id: LogoutController.php 109 2014-10-13 09:46:37Z hire@bizlogicdev.com $
  *
  * @category    Controllers
- * @package     Priceless PHP Base
+ * @package     jzxpr
 */
 
 class LogoutController extends Zend_Controller_Action

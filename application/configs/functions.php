@@ -1,12 +1,12 @@
 <?php
 /**
- * Priceless PHP Base
+ * jzxpr
  * Various Functions
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @copyright   2012 - 2015 BizLogic
  * @link        http://bizlogicdev.com
- * @link        http://pricelessphp.com
+ * @link        http://jzxpr.com
  *
  * @since       Wednesday, April 20, 2011 / 10:30 PM GMT+1
  * @edited      $Date: 2014-10-13 11:46:37 +0200 (Mon, 13 Oct 2014) $

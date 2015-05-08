@@ -1,18 +1,18 @@
 <?php
 /**
- * Priceless PHP Base
+ * jzxpr
  * Installer
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @copyright   2013 - 2015 BizLogic
  * @link        http://bizlogicdev.com
- * @link        http://pricelessphp.com
+ * @link        http://jzxpr.com
  *
  * @since       Thursday, December 12, 2013 / 18:04 GMT+1
  * @edited      $Date: 2014-09-28 21:35:34 +0200 (Sun, 28 Sep 2014) $
  * @version     $Id: index.php 81 2014-09-28 19:35:34Z hire@bizlogicdev.com $
  *
- * @package     Priceless PHP Base
+ * @package     jzxpr
  * @category    JavaScript
 */
 

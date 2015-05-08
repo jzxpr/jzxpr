@@ -1,6 +1,6 @@
 <?php
 /**
- * BizLogic Base Framework
+ * jzxpr
  * Admin Model
  *
  * @author      BizLogic <hire@bizlogicdev.com>

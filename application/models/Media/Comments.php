@@ -1,6 +1,6 @@
 <?php
 /**
- * BizLogic Base Framework
+ * jzxpr
  * Media Comments Model
  *
  * @author      BizLogic <hire@bizlogicdev.com>

@@ -1,6 +1,6 @@
 <?php
 /**
- * BizLogic Base Framework
+ * jzxpr
  * Core Library
  *
  * @author      BizLogic <hire@bizlogicdev.com>
@@ -13,7 +13,7 @@
  * @version     $Id: Base.php 109 2014-10-13 09:46:37Z dev@bizlogicdev.com $
  *
  * @category    Core
- * @package     BizLogic Base Framework
+ * @package     jzxpr
  */
 
 class Base extends Db

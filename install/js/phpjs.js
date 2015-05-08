@@ -1,19 +1,19 @@
 /**
- * Priceless PHP Base
+ * jzxpr
  * Various php.js Functions
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @author		Kevin van Zonneveld <http://kevin.vanzonneveld.net> et al
  * @license     GNU Affero General Public License v3
  * @link        http://bizlogicdev.com
- * @link		http://pricelessphp.com
+ * @link		http://jzxpr.com
  * @link		http://phpjs.org
  *
  * @since       Tuesday, April 19, 2012 / 12:47 PM GMT+1 mknox
  * @edited      $Date: 2014-10-13 11:46:37 +0200 (Mon, 13 Oct 2014) $ $Author: hire@bizlogicdev.com $
  * @version     $Revision: 109 $
  *
- * @package     Priceless PHP Base
+ * @package     jzxpr
  * @category	JavaScript
 */
 

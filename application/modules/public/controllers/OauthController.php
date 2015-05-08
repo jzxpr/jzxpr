@@ -1,12 +1,12 @@
 <?php
 /**
- * Priceless PHP Base
+ * jzxpr
  * OAuth Controller
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @copyright   2014 - 2015 BizLogic
  * @link        http://bizlogicdev.com
- * @link        http://pricelessphp.com
+ * @link        http://jzxpr.com
  * @license     GNU Affero General Public License v3
  *
  * @since  	    Friday, June 27, 2014, 03:38 AM GMT+1
@@ -14,7 +14,7 @@
  * @version     $Id: OauthController.php 56 2014-06-14 16:21:49Z hire@bizlogicdev.com $
  *
  * @category    Controllers
- * @package     Priceless PHP Base
+ * @package     jzxpr
 */
 
 class OauthController extends Zend_Controller_Action

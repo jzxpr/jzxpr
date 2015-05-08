@@ -1,11 +1,11 @@
 /**
- * Priceless PHP Base
+ * jzxpr
  * Custom JavaScript for Google+
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @copyright   2014 - 2015 BizLogic
  * @link        http://bizlogicdev.com
- * @link		http:/7pricelessphp.com
+ * @link		http:/7jzxpr.com
  * @license     GNU Affero General Public License v3
  *
  * @since  	    Tuesday, June 10, 2014, 06:25 AM GMT+1
@@ -13,7 +13,7 @@
  * @version     $Id$
  *
  * @category    JavaScript; Google+
- * @package     Priceless PHP Base
+ * @package     jzxpr
 */
 
 function googleplus_callback_onload()

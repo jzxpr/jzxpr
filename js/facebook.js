@@ -1,11 +1,11 @@
 /**
- * Priceless PHP Base
+ * jzxpr
  * Custom JavaScript for Facebook
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @copyright   2014 - 2015 BizLogic
  * @link        http://bizlogicdev.com
- * @link		http://pricelessphp.com
+ * @link		http://jzxpr.com
  * @license     GNU Affero General Public License v3
  *
  * @since  	    Monday, June 09, 2014, 05:23 PM GMT+1
@@ -13,7 +13,7 @@
  * @version     $Id: facebook.js 40 2014-05-04 23:36:58Z hire@bizlogicdev.com $
  *
  * @category    JavaScript; Facebook
- * @package     Priceless PHP Base
+ * @package     jzxpr
 */
 
 function facebook_login()

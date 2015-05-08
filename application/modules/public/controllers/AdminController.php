@@ -1,12 +1,12 @@
 <?php
 /**
- * Priceless PHP Base
+ * jzxpr
  * Admin Controller
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @copyright   2012 - 2015 BizLogic
  * @link        http://bizlogicdev.com
- * @link        http://pricelessphp.com
+ * @link        http://jzxpr.com
  * @license     GNU Affero General Public License v3
  *
  * @since  	    Saturday, August 31, 2013, 19:48 GMT+1
@@ -14,7 +14,7 @@
  * @version     $Id: AdminController.php 109 2014-10-13 09:46:37Z hire@bizlogicdev.com $
  *
  * @category    Admin Controllers
- * @package     Priceless PHP Base
+ * @package     jzxpr
 */
 
 class AdminController extends Zend_Controller_Action

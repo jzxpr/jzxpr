@@ -1,12 +1,12 @@
 <?php
 /**
- * Priceless PHP Base
+ * jzxpr
  * RSS Controller
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @copyright   2014 - 2015 BizLogic
  * @link        http://bizlogicdev.com
- * @link        http://pricelessphp.com
+ * @link        http://jzxpr.com
  * @license     GNU Affero General Public License v3
  *
  * @since  	    Sunday, September 14, 2014, 08:13 PM GMT+1
@@ -14,7 +14,7 @@
  * @version     $Id: RssController.php 68 2014-10-11 13:02:37Z hire@bizlogicdev.com $
  *
  * @category    Controllers
- * @package     Priceless PHP Base
+ * @package     jzxpr
 */
 
 class RssController extends Zend_Controller_Action

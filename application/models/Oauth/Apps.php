@@ -1,12 +1,12 @@
 <?php
 /**
- * BizLogic Base Framework
+ * jzxpr
  * Oauth Apps Model
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @copyright   2014 - 2015 BizLogic
  * @link        http://bizlogicdev.com
- * @link        http://pricelessphp.com
+ * @link        http://jzxpr.com
  * @license     GNU Affero General Public License v3
  *
  * @since       Friday, June 27, 2014, 06:55 AM GMT+1 mknox

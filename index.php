@@ -1,18 +1,18 @@
 <?php
 /**
- * Priceless PHP Base
+ * jzxpr
  * Site Index
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @copyright   2011 - 2015 BizLogic
  * @link        http://bizlogicdev.com
- * @link        http://pricelessphp.com
+ * @link        http://jzxpr.com
  *
  * @since       Wednesday, July 06, 2011 / 10:17 AM GMT+1
  * @edited      $Date: 2014-10-13 11:46:37 +0200 (Mon, 13 Oct 2014) $
  * @version     $Id: index.php 109 2014-10-13 09:46:37Z hire@bizlogicdev.com $
  *
- * @package     Priceless PHP Base
+ * @package     jzxpr
  * @category    Site Index
 */
 

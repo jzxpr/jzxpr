@@ -1,6 +1,6 @@
 <?php
 /**
- * BizLogic Base Framework
+ * jzxpr
  * Bootstrap
  *
  * @author      BizLogic <hire@bizlogicdev.com>
@@ -13,7 +13,7 @@
  * @version     $Id: Bootstrap.php 109 2014-10-13 09:46:37Z dev@bizlogicdev.com $
  *
  * @category    Bootstrap
- * @package     BizLogic Base Framework
+ * @package     jzxpr
 */
 
 error_reporting( E_ALL );

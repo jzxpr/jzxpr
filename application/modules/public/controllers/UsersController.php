@@ -1,12 +1,12 @@
 <?php
 /**
- * Priceless PHP Base
+ * jzxpr
  * Users Controller
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @copyright   2012 - 2015 BizLogic
  * @link        http://bizlogicdev.com
- * @link        http://pricelessphp.com
+ * @link        http://jzxpr.com
  * @license     GNU Affero General Public License v3
  *
  * @since  	    Thursday, November 29, 2012, 12:52 PM GMT+1
@@ -14,7 +14,7 @@
  * @version     $Id: UsersController.php 109 2014-10-13 09:46:37Z hire@bizlogicdev.com $
  *
  * @category    Controllers
- * @package     Priceless PHP Base
+ * @package     jzxpr
 */
 
 class UsersController extends Zend_Controller_Action

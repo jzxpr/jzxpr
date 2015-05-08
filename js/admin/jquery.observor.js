@@ -1,11 +1,11 @@
 /**
- * Priceless PHP Base
+ * jzxpr
  * jQuery Observor
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @copyright   2012 - 2015 BizLogic
  * @link        http://bizlogicdev.com
- * @link		http://pricelessphp.com
+ * @link		http://jzxpr.com
  * @license     GNU Affero General Public License v3
  *
  * @since  	    Wednesday, July 10, 2013, 20:18 GMT+1
@@ -13,7 +13,7 @@
  * @version     $Id: jquery.observor.js 109 2014-10-13 09:46:37Z hire@bizlogicdev.com $
  *
  * @category    JavaScript
- * @package     Priceless PHP Base
+ * @package     jzxpr
 */
 
 $(document).ready(function() {	

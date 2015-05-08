@@ -1,18 +1,18 @@
 /**
- * Priceless PHP Base
+ * jzxpr
  * Various JavaScript Functions
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @license     GNU Affero General Public License v3
  * @copyright	2012 - 2015 BizLogic
  * @link        http://bizlogicdev.com
- * @link		http://pricelessphp.com
+ * @link		http://jzxpr.com
  *
  * @since       Wednesday, April 25, 2012 / 01:47 AM GMT+1 mknox
  * @edited      $Date: 2014-10-13 11:46:37 +0200 (Mon, 13 Oct 2014) $ $Author: hire@bizlogicdev.com $
  * @version     $Revision: 109 $
  *
- * @package     Priceless PHP Base
+ * @package     jzxpr
  * @category	JavaScript
 */
 

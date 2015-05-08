@@ -1,11 +1,11 @@
 /**
- * Priceless PHP Base
+ * jzxpr
  * phpJS
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @copyright   2012 - 2015 BizLogic
  * @link        http://bizlogicdev.com
- * @link		http://pricelessphp.com
+ * @link		http://jzxpr.com
  * @license     GNU Affero General Public License v3
  *
  * @since  	    Wednesday, July 10, 2013, 20:49 GMT+1

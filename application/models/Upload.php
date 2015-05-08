@@ -1,6 +1,6 @@
 <?php
 /**
- * BizLogic Base Framework
+ * jzxpr
  * Upload Model
  *
  * @author      BizLogic <hire@bizlogicdev.com>

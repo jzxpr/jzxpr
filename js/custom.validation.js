@@ -1,5 +1,5 @@
 /**
- * BizLogic Base Framework
+ * jzxpr
  * Custom JavaScript
  *
  * @author      BizLogic <hire@bizlogicdev.com>

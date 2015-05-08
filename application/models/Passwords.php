@@ -1,12 +1,12 @@
 <?php
 /**
- * BizLogic Base Framework
+ * jzxpr
  * Passwords Model
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @copyright   2013 - 2015 BizLogic
  * @link        http://bizlogicdev.com
- * @link        http://pricelessphp.com
+ * @link        http://jzxpr.com
  * @license     GNU Affero General Public License v3
  *
  * @since       Thursday, May 07, 2015, 02:08 PM GMT+1 mknox

@@ -1,18 +1,18 @@
 <?php
 /**
- * Priceless PHP Base
+ * jzxpr
  * Various Functions
  *
  * @author      BizLogic <hire@bizlogicdev.com>
  * @license     GNU Affero General Public License v3
  * @link        http://bizlogicdev.com
- * @link        http://pricelessphp.com
+ * @link        http://jzxpr.com
  *
  * @since       Wednesday, October 21, 2009 / 07:01 PM UTC+1 (mknox)
  * @edited      $Date: 2011-05-03 12:36:13 +0200 (Tue, 03 May 2011) $ $Author: mknox $
  * @version     $Revision: 2 $
  *
- * @package     Priceless PHP Base
+ * @package     jzxpr
  * @subpackage  Common Functions
 */
 
