@@ -29,9 +29,9 @@ $(document).ready(function() {
 	$('#linkAbout').click(function(event) {
 		var text	= '<strong>jzxpr</strong>';
 		text		= text + '<br>Password Management for Teams & Individuals';
-		text		= text + '<br><br>&copy 2014 - ' + new Date().getFullYear();
-		text		= text + ' BizLogic';
 		text		= text + '<br><a href="http://jzxpr.com" target="_blank">http://jzxpr.com</a>';
+		text		= text + '<br><br>&copy 2014 - ' + new Date().getFullYear();
+		text		= text + ' BizLogic<br>All Rights Reserved';
 		
 		bootbox.alert(text, function() {
 			// ...

@@ -10,8 +10,8 @@
  * @license     GNU Affero General Public License v3
  *
  * @since  	    Thursday, May 07, 2015, 03:48 PM GMT+1
- * @modified    $Date: 2014-10-13 11:46:37 +0200 (Mon, 13 Oct 2014) $ $Author: hire@bizlogicdev.com $
- * @version     $Id: IndexController.php 109 2014-10-13 09:46:37Z hire@bizlogicdev.com $
+ * @modified    $Date$ $Author$
+ * @version     $Id$
  *
  * @category    Controllers
  * @package     jzxpr
@@ -19,15 +19,66 @@
 
 class PasswordController extends Zend_Controller_Action
 {	
-    public function init() {}
+    private $_Password;
     
-    public function indexAction() 
+    public function init() 
     {
-        
+        $this->_Password = new Password;
     }
     
-    public function addAction()
+    public function indexAction() {}
+    
+    public function addAction() 
     {
-      
+        $Password_Category = new Password_Category;
+        $category = $Password_Category->getAll();
+        
+        $this->view->category = $category;        
+    }
+    
+    public function ajaxAction()
+    {
+        $this->_helper->viewRenderer->setNoRender( true );
+    
+        if( !empty( $_POST ) ) {
+            header('Content-Type: application/json');
+            	
+            $method = $_POST['method'];
+            $json	= array();
+            	
+            switch( $method ) {
+                case 'passwordDecrypt':
+                    $result	= (int)$this->_Password->decryptById( $_POST['id'] );
+                    
+                    if( $result > 0 ) {
+                        $json['status'] = 'OK';
+                    } else {
+                        $json['status'] = 'ERROR';
+                        $json['error']	= $result;
+                    }
+                    
+                    break;
+                    
+                case 'passwordAdd':
+                    $result	= (int)$this->_Password->insert( $_POST['data'] );
+    
+                    if( $result > 0 ) {
+                        $json['status'] = 'OK';
+                    } else {
+                        $json['status'] = 'ERROR';
+                        $json['error']	= $result;
+                    }
+                    
+                    break;
+    
+                default:
+                    $json['status'] = 'ERROR';
+                    $json['error']	= 'UNHANDLED_EXCEPTION';
+            }
+            	
+            exit( json_encode( $json ) );
+        } else {
+            header( 'Location: '.BASEURL.'');
+        }
     }
 }

@@ -2975,3 +2975,88 @@ function getAllControllers( $namesOnly = true )
     
     return $controllers;    
 }
+
+/**
+ * Encrypt data w/ OpenSSL
+ *
+ * @link    https://gist.github.com/glynrob/7059838#file-gistfile1-php
+ * @param   string  $string
+ * @param   string  $publicKeyPath
+ * @return  string
+*/
+function encrypt_openssl( $string, $publicKeyPath )
+{
+    if( !file_exists( $publicKeyPath ) ) {
+        return false;
+    }
+    
+    $fp         = fopen( $publicKeyPath, 'r' );
+    $publicKey  = fread( $fp, 8192 );
+
+    fclose( $fp );
+
+    openssl_get_publickey( $publicKey );
+    openssl_public_encrypt( $string, $encrypted, $publicKey );
+
+    return base64_encode( $encrypted );
+}
+
+/**
+ * Decrypt data w/ OpenSSL
+ *
+ * @link    https://gist.github.com/glynrob/7059838#file-gistfile1-php
+ * @param   string  $string
+ * @param   string  $privateKeyPath
+ * @return  string
+*/
+function decrypt_openssl( $string, $privateKeyPath )
+{
+    if( !file_exists( $privateKeyPath ) ) {
+        return false;
+    }
+    
+    $fp         = fopen( $privateKeyPath, 'r' );
+    $privateKey = fread( $fp, 8192 );
+
+    fclose( $fp );
+
+    $privateKey = openssl_get_privatekey( $privateKey );
+
+    openssl_private_decrypt( base64_decode( $string ), $decrypted, $privateKey );
+
+    return $decrypted;
+}
+
+/**
+ * Generate Key Pairs w/ OpenSSL
+ *
+ * @link    https://www.virendrachandak.com/techtalk/encryption-using-php-openssl
+ * @param   array   $keyParams
+ * @return  boolean
+ */
+function generate_keys_openssl( $keyParams )
+{
+    // START:   defaults
+    $keyParams['privateKeySize'] = ( !isset( $keyParams['privateKeySize'] ) ) ? 2048 : $keyParams['privateKeySize'];    
+    $keyParams['privateKeyType'] = ( !isset( $keyParams['privateKeyType'] ) ) ? OPENSSL_KEYTYPE_RSA : $keyParams['privateKeyType']; 
+    // END:     defaults
+    
+    $privateKey = openssl_pkey_new(
+        array(
+            'private_key_bits' => $keyParams['privateKeySize'],
+            'private_key_type' => $keyParams['privateKeyType'],
+        )
+    );
+    
+    // Save the private key. Never share this file with anyone.
+    openssl_pkey_export_to_file( $privateKey, $keyParams['privateKeyPath'] );
+    
+    // Generate the public key for the private key
+    $publicKey = openssl_pkey_get_details( $privateKey );
+    
+    // Save the public key. Send this file to anyone who want to send you the encrypted data.
+    file_put_contents( $keyParams['publicKeyPath'], $publicKey['key'] );
+    
+    // Free the private Key.
+    openssl_free_key( $privateKey );    
+}

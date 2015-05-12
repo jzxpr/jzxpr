@@ -120,6 +120,10 @@ class Site_Config extends Db
 			        $value['value'] = str_replace( '__BASEURL__', PROTOCOL_RELATIVE_URL, $value['value'] );
 			    }
 			    
+			    if( preg_match( '/%PATH%/', $value['value'] ) ) {
+			        $value['value'] = str_replace( '%PATH%', PATH, $value['value'] );
+			    }
+			    
 				define( strtoupper( $value['name'] ), $value['value'] );
 			}
 		}

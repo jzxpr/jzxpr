@@ -1,1 +1,0 @@
-[11-Apr-2015 23:22:11 UTC] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host '__DB_HOST__' (2) in /home/bizlogic/public_html/passwords.pmhdev.com/application/Bootstrap.php on line 222

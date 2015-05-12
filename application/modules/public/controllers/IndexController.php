@@ -22,9 +22,9 @@ class IndexController extends Zend_Controller_Action
     public function init() {}
     
     public function indexAction() 
-    {
-        $Passwords      = new Passwords();
-        $passwordList   = $Passwords->get( 50 );
+    {        
+        $Password       = new Password();
+        $passwordList   = $Password->get( 50 );
         
         $this->view->passwords = $passwordList;
     }

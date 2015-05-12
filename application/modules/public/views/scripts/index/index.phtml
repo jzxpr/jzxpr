@@ -140,24 +140,7 @@
 			<div style="display: block; z-index: 1000; border: medium none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.6; cursor: wait; position: fixed;" class="blockUI blockOverlay"></div>
 			<div style="display: block; z-index: 1011; position: fixed; padding: 0px; margin: 0px; width: 30%; top: 40%; left: 35%; text-align: center; cursor: wait;" class="blockUI blockMsg blockPage"><img src="<?php echo SITE_DEFAULT_PRELOADER_IMAGE_PATH; ?>"></div>
 		<?php endif; ?>		
-		<!-- END:		blockUI -->	
-		<div id="fb-root"></div>
-	    <script type="text/javascript">
-	      window.fbAsyncInit = function() {
-	        FB.init({
-	          appId      : '<?php echo SITE_FACEBOOK_APP_ID; ?>',
-	          xfbml      : true,
-	          version    : 'v2.0'
-	        });
-	      };
-	      (function(d, s, id){
-	         var js, fjs = d.getElementsByTagName(s)[0];
-	         if (d.getElementById(id)) {return;}
-	         js = d.createElement(s); js.id = id;
-	         js.src = "//connect.facebook.net/en_US/sdk.js";
-	         fjs.parentNode.insertBefore(js, fjs);
-	       }(document, 'script', 'facebook-jssdk'));
-	    </script>		
+		<!-- END:		blockUI -->			
 		
 	    <div class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
@@ -225,12 +208,6 @@
 			            	<?php endif; ?>			            		
 			            <?php endif; ?>			             		             
 	          		</ul>
-
-					<!-- START:	Search Form -->
-					<form class="navbar-form navbar-left">
-	                	<input type="text" placeholder="<?php echo translate('search'); ?>" class="form-control col-lg-8">
-	                </form>
-					<!-- END:	Search Form -->
 	
 	          		<ul class="nav navbar-nav navbar-right">
 	            		<li class="dropdown">
@@ -264,13 +241,40 @@
 
 	    <div class="container-fluid" style="margin-top: 20px;">
 	        <?php if( !empty( $this->passwords ) ): ?>
+                <div style="margin-bottom: 30px;">
+                    <a href="<?php PROTOCOL_RELATIVE_URL; ?>/password/add" class="blockUI-trigger btn btn-primary btn-lg"><?php echo translate('add_password'); ?></a>
+                </div>
+	        
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th><?php echo translate('username'); ?></th>
+                                <th><?php echo translate('password'); ?></th>
+                                <th><?php echo translate('description'); ?></th>
+                                <th><?php echo translate('comment'); ?></th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+        	            <?php foreach( $this->passwords AS $key => $value ): ?>
+        	               <tr>
+                                <td><?php echo $value['username']; ?></td>
+                                <td>*********** <div class="pull-right"><a data-id="<?php echo $value['id']; ?>" href="javascript:void(0);" class="password-show btn btn-primary btn-xs"><?php echo translate('show'); ?></a></div></td>
+                                <td><?php echo ( strlen( trim( $value['description'] ) ) ) ? $value['description']  : '&mdash;'; ?></td>
+                                <td><?php echo ( strlen( trim( $value['comment'] ) ) ) ? $value['comment'] : '&mdash;'; ?></td>
+                            </tr>
+        	            <?php endforeach; ?>
+                        </tbody>    
+                    </table>
+                </div> 	            
 	        <?php else: ?>
                 <div class="alert alert-danger" role="alert">
                     <i class="fa fa-warning"></i> <?php echo translate('no_passwords'); ?>
                 </div>
                 
                 <div>
-                    <a href="<?php echo PROTOCOL_RELATIVE_URL.'/password/add'; ?>" class="btn btn-primary btn-lg btn-block"><?php echo translate('add_password'); ?></a>
+                    <a href="<?php echo PROTOCOL_RELATIVE_URL.'/password/add'; ?>" class="blockUI-trigger btn btn-primary btn-lg btn-block"><?php echo translate('add_password'); ?></a>
                 </div>
 	        <?php endif; ?>
 	    </div>
@@ -297,14 +301,7 @@
 				$('body').imagesLoaded( function() {
 					$.unblockUI();
 				});																    
-		    });	
-		    	    				    
-			// Google+
-		  	(function() {
-		    	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-		    	po.src = 'https://apis.google.com/js/plusone.js?onload=googleplus_callback_onload';
-		    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-		  	})(); 		    		    				    
+		    });		    		    				    
 		</script>
 		
 		<!-- SmartMenus -->
@@ -318,5 +315,9 @@
 		
 		<!-- Bootbox -->							
 		<script type="text/javascript" src="<?php echo PROTOCOL_RELATIVE_URL; ?>/js/bootstrap/extensions/bootbox/bootbox.js"></script>		    
+	
+	    <!-- Password JS -->
+        <script type="text/javascript" src="<?php echo PROTOCOL_RELATIVE_URL; ?>/js/password.js"></script>		    
+	
 	</body>	
 </html>
